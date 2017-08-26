@@ -1,0 +1,42 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+		
+	{
+		// Algoritmo FizzBuzz, Fizz, Buzz
+		//se debe realizar un algoritmo de l número 1 al número 100,
+		//en orden correlativo, pero cada vez que un número sea múltiplo de 3, 
+		//debe decir Fizz y cada vez que un número sea múltiplo de 5, debe decir Buzz, en el caso que un número sea múltiplo de 3 y 5, 
+		//debe decir FizzBuzz, si el número no es múltiplo, se debe mostrar solamente el número.
+		
+		string a = "fizzbuzz";//3y5
+		string b = "fizz";//3
+		string c = "buzz";//5
+		
+		for(int i = 0; i <=100; i++ )
+		{
+			if((i%3==0) && (i%5==0))
+			{
+	
+			   Console.WriteLine(i + " "+ a);
+			}
+			else if(i%3==0)
+			{
+				Console.WriteLine(i + " "+ b);
+		    }			
+			else if(i%5==0)
+			{
+				Console.WriteLine(i + " "+ c);
+		    }
+			else{
+			
+			    Console.WriteLine(i);
+			}
+		
+		}
+		
+		
+	}
+}
